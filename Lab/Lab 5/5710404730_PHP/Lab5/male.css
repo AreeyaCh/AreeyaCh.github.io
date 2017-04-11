@@ -1,0 +1,28 @@
+html {
+    margin: 0;
+    padding: 0;
+    }
+
+.Mform {
+    background-color: #8DB6CD;
+    border-style: dashed;
+    border-color: #838B8B;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    filter:alpha(opacity=40); 
+    opacity:1.0;
+    clear: right; 
+}
+
+body { 
+    
+    background-image: url("http://y2yoga.com/wp-content/uploads/2014/04/bokeh-cover-bg1.jpg");
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+    font: 75% georgia, sans-serif;
+    color: #897264; 
+    text-align: center;
+    padding: 0;
+    }
+

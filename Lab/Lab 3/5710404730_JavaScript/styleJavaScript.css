@@ -1,0 +1,104 @@
+html {
+	margin: 0;
+	padding: 0;
+	}
+
+.MainForm {
+	background-color: #fffafa;
+	border-style: dashed;
+	border-color: #897264;
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	filter:alpha(opacity=40); 
+	opacity:0.8;
+	clear: right; 
+	/*padding: 0px 10px 0 10px;*/
+}
+
+body { 
+	
+	background-image: url("https://images5.alphacoders.com/302/302475.jpg");
+	/*background-image:  url("blossom-tree.jpg");*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font: 75% georgia, sans-serif;
+	color: #897264; 
+	text-align: center;
+	padding: 0;
+	/*margin-left: 100px;
+	margin-right: 100px;*/
+	/*border-style: dashed;
+	border-color: #897264;*/
+	}
+
+.Address-form {
+	background-color: #fffafa;
+	border-style: dashed;
+	border-color: #897264;
+	margin-left: 500px;
+	margin-right: 500px;
+	filter:alpha(opacity=40); 
+	opacity:0.8;
+	clear: right;
+}
+h1{
+	background-image: url("head1.png");
+	/*background-repeat: no-repeat;*/
+	/*background-attachment: fixed;*/
+	margin-top: 10px;
+	margin-left: 550px;
+	margin-right: 560px;
+	width: auto;
+	height: 325px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ZodiacSign-choice h2{
+	background-image: url("sign.png");
+	margin-top: 10px;
+	margin-left: 550px;
+	margin-right: 720px;
+	width: auto;
+	height: 45px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ZodiacYear-choice h2{
+	background-image: url("year.png");
+	margin-top: 10px;
+	margin-left: 550px;
+	margin-right: 720px;
+	width: auto;
+	height: 45px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+p{
+	color: #ffffff;
+}
+
+.ZodiacSign .stZodiac{
+	position:relative;
+    float:left;
+    width: 33%;
+}
+
+.ZodiacSign .ndZodiac{
+	position:relative;
+    float:left;
+    width: 33%;
+}
+
+.ZodiacSign .rdZodiac{
+	position:relative;
+    float:right;
+    width: 33%;
+}
+
