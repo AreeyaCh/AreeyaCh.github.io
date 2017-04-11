@@ -1,0 +1,329 @@
+<html>
+<head>
+	<title>
+		Form 
+	</title>
+	<link rel="stylesheet" media="screen" href="styleJavascript.css">
+		<style type="text/css">
+
+			div.reSizeimg img {
+			width: 150px;
+			height: auto;
+			}
+
+		</style>
+</head>
+
+<body>
+	<form id = "first-form"  action="table.html">
+	<div class = "MainForm" id = "main">
+	<h1>Form</h1>	
+
+	<h2>Firstname :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="fname" size="20"><br></h2>
+
+	<h2>Lastname :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="lname"  size="20"><br></h2>
+
+	<h2>Address </h2>
+	<div class = "Address-form" id = "addr">
+
+		<h3>House Number :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="hnum" size="20"></h3>
+
+		<h3>Street :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="str" size="20"></h3>
+
+		<h3>City :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="city" size="20"></h3>
+
+		<h3>Province :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="prov" size="20"></h3>
+
+		<h3>Zipcode : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" name="code" size ="20" maxlength="5"></h3>
+	</div>
+
+	<h2>Phone Number : <!-- <input type="number" name="pnum"> -->&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input name="phone_number1" id="phone_number1" type="text" size="1" maxlength="2" onkeyup="movetoNext(this, 'phone_number2')" /> - <input name="phone_number2" id="phone_number2" type="text" size="2" maxlength="3" onkeyup="movetoNext(this, 'phone_number3')" /> - <input name="phone_number3" id="phone_number3" type="text" size="3" maxlength="4" /> </h2>
+
+	<h2>Cell phone number : <!-- <input type="number" name="cpnum"> -->&nbsp&nbsp<input name="cell_number1" id="cell_number1" type="text" size="2" maxlength="3" onkeyup="movetoNext(this, 'cell_number2')" /> - <input name="cell_number2" id="cell_number2" type="text" size="2" maxlength="3" onkeyup="movetoNext(this, 'cell_number3')" /> - <input name="cell_number3" id="cell_number3" type="text" size="3" maxlength="4" /> </h2>
+
+	<h2>Birthday : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<select id = "date">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+			<option>14</option>
+			<option>15</option>
+			<option>16</option>
+			<option>17</option>
+			<option>18</option>
+			<option>19</option>
+			<option>20</option>
+			<option>21</option>
+			<option>22</option>
+			<option>23</option>
+			<option>24</option>
+			<option>25</option>
+			<option>26</option>
+			<option>27</option>
+			<option>28</option>
+			<option>29</option>
+			<option>30</option>
+			<option>31</option>
+		</select>
+		<select id = "month">
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+			<option>April</option>
+			<option>May</option>
+			<option>June</option>
+			<option>July</option>
+			<option>August</option>
+			<option>September</option>
+			<option>October</option>
+			<option>November</option>
+			<option>December</option>
+		</select>
+		<select id = "year">
+			<option>1985</option>
+			<option>1986</option>
+			<option>1987</option>
+			<option>1988</option>
+			<option>1989</option>
+			<option>1990</option>
+			<option>1991</option>
+			<option>1992</option>
+			<option>1993</option>
+			<option>1994</option>
+			<option>1995</option>
+			<option>1996</option>
+			<option>1997</option>
+			<option>1998</option>
+			<option>1999</option>
+			<option>2000</option>
+			<option>2001</option>
+			<option>2002</option>
+			<option>2003</option>
+			<option>2004</option>
+			<option>2005</option>
+			<option>2006</option>
+			<option>2008</option>
+			<option>2009</option>
+			<option>2010</option>
+		</select>
+	</h2>
+
+	<h2>Citizenship number : <!-- <input type="number" name="cnum"> --> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input name="serial_number1" id="serial_number1" type="text" size="1" maxlength="1" onkeyup="movetoNext(this, 'serial_number2')" /> - <input name="serial_number2" id="serial_number2" type="text" size="3" maxlength="4" onkeyup="movetoNext(this, 'serial_number3')" /> - <input name="serial_number3" id="serial_number3" type="text" size="4" maxlength="5" onkeyup="movetoNext(this, 'serial_number4')" /> - <input name="serial_number4" id="serial_number4" type="text" size="1" maxlength="2" onkeyup="movetoNext(this, 'serial_number5')" /> - <input name="serial_number5" id="serial_number5" type="text" size="1" maxlength="1" />
+	</h2>
+
+	<div class = "ZodiacSign-choice" id = "zsc">
+	<h2>Zodiac sign </h2>
+
+		<!-- <form> -->
+			<div class = "ZodiacSign">
+
+				<div class = "stZodiac" id = "stZodiac">
+  					<input type="radio" name="zodiacS" value="capricorn">Capricorn <div class = "reSizeimg"><img src="capricorn1.png"></div>
+ 					<input type="radio" name="zodiacS" value="aquarius">Aquarius <div class = "reSizeimg"><img src="aquarius1.png"></div>
+ 					<input type="radio" name="zodiacS" value="pisces">Pisces <div class = "reSizeimg"><img src="pisces1.png"></div>
+  					<input type="radio" name="zodiacS" value="aries">Aries <div class = "reSizeimg"><img src="aries1.png"></div>
+  				</div>
+
+  				<div class = "ndZodiac" id = "ndZodiac">
+ 					<input type="radio" name="zodiacS" value="taurus">Taurus <div class = "reSizeimg"><img src="taurus1.png"></div>
+ 					<input type="radio" name="zodiacS" value="gemini">Gemini <div class = "reSizeimg"><img src="gemini1.png"></div>
+  					<input type="radio" name="zodiacS" value="cancer">Cancer <div class = "reSizeimg"><img src="cancer1.png"></div>
+  					<input type="radio" name="zodiacS" value="leo">Leo <div class = "reSizeimg"><img src="leo1.png"></div>
+  				</div>
+
+  				<div class = "rdZodiac" id = "rdZodiac">
+  					<input type="radio" name="zodiacS" value="virgo">Virgo <div class = "reSizeimg"><img src="virgo1.png"></div>
+  					<input type="radio" name="zodiacS" value="libra">Libra <div class = "reSizeimg"><img src="libra1.png"></div>
+  					<input type="radio" name="zodiacS" value="scorpio">Scorpio <div class = "reSizeimg"><img src="scorpio1.png"></div>
+  					<input type="radio" name="zodiacS" value="sagittarius">Sagittarius <div class = "reSizeimg"><img src="sagittarius1.png"></div>
+  				</div>
+
+			</div>
+		<!-- </form> -->
+	</div>
+
+	<p>Space</p><br>
+	
+	<div class = "ZodiacYear-choice" id = "zyc">
+	<h2>Zodiac year</h2>
+		<!-- <form name = "ZodiacYears"> -->
+
+			<div class ="ZodiacYear">
+				<div class = "stYear" id = "stYear">
+  					<input type="radio" name="zodiacY" value="mouse">Mouse   <img src="rat.png">
+  					<input type="radio" name="zodiacY" value="ox">Ox   <img src="cow.png">
+  					<input type="radio" name="zodiacY" value="tiger">Tiger   <img src="tiger.png">
+  					<input type="radio" name="zodiacY" value="rabbit">Rabbit   <img src="rabbit.png"><br>
+				</div>
+
+				<div class = "ndYear" id = "ndYear">
+  					<input type="radio" name="zodiacY" value="dragon">Dragon<img src="dragon.png">
+  					<input type="radio" name="zodiacY" value="snake">Snake   <img src="snake.png">
+  					<input type="radio" name="zodiacY" value="horse">Horse   <img src="horse.png">
+  					<input type="radio" name="zodiacY" value="goat">Goat   <img src="sheep.png"><br>
+  				</div>
+
+				<div class = "rdYear" id = "rdYear">
+  					<input type="radio" name="zodiacY" value="monkey">Monkey   <img src="monkey.png">
+  					<input type="radio" name="zodiacY" value="rooster">Rooster   <img src="chick.png">
+  					<input type="radio" name="zodiacY" value="dog">Dog   <img src="dog.png">
+  					<input type="radio" name="zodiacY" value="pig">Pig   <img src="pig.png"><br>
+ 				</div>
+
+			</div>
+	</div>
+		<!-- </form> -->
+	<!-- <select id = "zyear">
+	<option value="">Choose your zodiac sign</option>
+	</select> -->
+	<!-- 	<option>Mouse</option>
+		<option>Ox</option>
+		<option>Tiger</option>
+		<option>Rabbit</option>
+		<option>Dragon</option>
+		<option>Snake</option>
+		<option>Horse</option>
+		<option>Goat</option>
+		<option>Monkey</option>
+		<option>Rooster</option>
+		<option>Dog</option>
+		<option>Pig</option>
+	</select> -->
+<!-- </form> -->
+
+	<h2>Birth day of week : </h2>
+		<!-- <form name = "Dayweek"> -->
+			<select id = "week">
+				<option>Sunday</option>
+				<option>Monday</option>
+				<option>Tuesday</option>
+				<option>Wednesday</option>
+				<option>Thrusday</option>
+				<option>Friday</option>
+				<option>Saturday</option>
+			</select>
+			<br>
+			<br>
+			<br>
+		<!-- </form> -->
+
+<input type="button" onclick="FunctionSave()" value="Save">
+<input type="submit" onclick="FunctionSub()" value="Submit">
+<input type="button" onclick="FunctionRe()" value="Reset">
+<br>
+<br>
+</div>
+<script>
+	function movetoNext(current, nextFieldID) {
+    	 if (current.value.length >= current.maxLength) {
+          document.getElementById(nextFieldID).focus();
+    	 }
+	}
+	function FunctionSave(){
+		// if (typeof(Storage) !== "undefined") {
+		// 	localStorage.lastname = "";
+		// 	document.getElementById("main").innerHTML = localStorage.lastname;
+		// } else {
+  //   		document.getElementById("main").innerHTML = "Sorry, your browser does not support Web Storage...";
+		// }
+		if(typeof(Storage) == "undefined") {   
+			alert("Not storage support");
+		}
+
+		$("#btnNext").click(function(){
+
+			localStorage.setItem("sName", $("#fname").val());
+
+			localStorage.setItem("sEmail", $("#lname").val());
+
+			window.location="page2.html";
+
+		});
+	}
+
+	function FunctionSub() {
+
+    	fname = document.forms[0].fname.value;
+    	lname = document.forms[0].lname.value;
+    	alert("Hello " + fname +"  "+ lname+"! You will now be redirected to Personal List");
+   		// window.closed();
+   		ckForm();
+   		// checkCookie();
+   		alert("Hello " + fname +"  "+ lname+"! You will now be redirected to Personal List");
+	}
+
+	function FunctionRe() {
+   		document.getElementById("first-form").reset();
+	}
+
+	function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user = getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+    	user = document.forms[0].fname.value;
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
+
+function ckForm(){
+    var form = document.getElementById('main').elements;
+    for(var i = 0; i < form.length; i++){
+        if(form[i].type=="button") continue;
+        if(form[i].value==""){
+            if(form[i].name=="fname"){
+                alert("Name is null");
+            }else{
+                alert("element "+i+ "is null");
+            }
+            form[i].focus();
+            return;
+        }else{
+            var strLength = form[i].value;          
+            if(strLength.length<10){
+               alert("Word length"+strLength.length);    
+            };
+        }
+    }
+//form.submit();
+}
+</script>
+	</form>
+	<!-- </div> -->
+
+</body>
+</html>

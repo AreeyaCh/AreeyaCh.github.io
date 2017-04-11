@@ -1,0 +1,27 @@
+html {
+    margin: 0;
+    padding: 0;
+    }
+
+.Fform {
+    background-color: #fffafa;
+    border-style: dashed;
+    border-color: #897264;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    filter:alpha(opacity=40); 
+    opacity:1.0;
+    clear: right; 
+}
+
+body { 
+    
+    background-image: url("http://www.umpun.com/wp-content/uploads/2014/04/daimond-BG-800x1600.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font: 75% georgia, sans-serif;
+    color: #897264; 
+    text-align: center;
+    padding: 0;
+    }
